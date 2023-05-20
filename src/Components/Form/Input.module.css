@@ -1,0 +1,28 @@
+.input {
+	display: flex;
+	gap: 10px;
+}
+
+.input label {
+	background-color: #bbcdd7;
+	color: #FFFFFF;
+	flex-grow: 1;
+	padding: 10px 0px;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+	transition: .1s;
+}
+.input label:hover {
+	background-color: #A7BDC9;
+}
+.input label.active {
+	background-color: #243b4d;
+}
+
+
+input[type='radio'] {
+	display: none;
+}
+
+

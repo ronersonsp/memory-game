@@ -1,0 +1,22 @@
+.active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  position: relative;
+}
+.active p {
+  color: white !important;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--primary-color);
+}
+

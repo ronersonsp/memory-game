@@ -1,0 +1,25 @@
+.text h1 {
+  color: #162739;
+}
+.text p {
+  color: #77858c;
+}
+
+.parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem 0px;
+}
+
+.parameter div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #d9eefa;
+  color: #616d73;
+}

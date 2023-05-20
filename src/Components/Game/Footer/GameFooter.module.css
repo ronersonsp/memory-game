@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.footerSingle {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; 
+  text-align: center;
+}
+
+.footer div {
+  padding: .8rem 3.5rem;
+  background-color: #D3E7F2;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #162739;
+}
+
+.footer div p {
+  color: #718D9D;
+  margin: 0px 0px 12px;
+}
+

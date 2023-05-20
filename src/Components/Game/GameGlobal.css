@@ -1,0 +1,15 @@
+.flipped {
+  background-color: #FF980D !important;
+  box-shadow: inset 0 0 0 1px #F38F08;
+}
+
+.flipped > *,
+.activeFlip > * {
+  display: block !important;
+}
+
+.activeFlip {
+  background-color: #BBCDD7 !important;
+  box-shadow: inset 0 0 0 1px #ADC1CC;
+  transition: 1s;
+}

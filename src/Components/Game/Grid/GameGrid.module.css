@@ -1,0 +1,36 @@
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.grid4 {
+  max-width: 500px;
+}
+.grid6 {
+  max-width: 700px;
+}
+.grid6.gridContainer span {
+  margin: 8px;
+  width: 90px;
+  height: 90px;
+}
+.gridContainer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #162739;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.gridContainer span > * {
+  display: none;
+}
+

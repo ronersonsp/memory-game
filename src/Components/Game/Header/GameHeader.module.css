@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.header h1 {
+	color: #162633;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.header a:nth-child(2) {
+  margin-left: 10px;
+}
