@@ -16,3 +16,26 @@
 .header a:nth-child(2) {
   margin-left: 10px;
 }
+
+@media (max-width: 400px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .header :global(.button) {
+    font-size: .7rem;
+    padding: .5rem 1rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .header :global(.button) {
+    font-size: .6rem;
+    padding: .5rem 1rem;
+  }
+  .header a:nth-child(2) {
+    margin-left: 5px;
+  }
+}

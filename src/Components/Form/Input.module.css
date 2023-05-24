@@ -1,28 +1,33 @@
 .input {
-	display: flex;
-	gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .input label {
-	background-color: #bbcdd7;
-	color: #FFFFFF;
-	flex-grow: 1;
-	padding: 10px 0px;
-	border-radius: 50px;
-	text-align: center;
-	cursor: pointer;
-	transition: .1s;
+  background-color: #bbcdd7;
+  color: #ffffff;
+  flex-grow: 1;
+  padding: 10px 0px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .input label:hover {
-	background-color: #A7BDC9;
+  background-color: #a7bdc9;
 }
 .input label.active {
-	background-color: #243b4d;
+  background-color: #243b4d;
 }
-
 
 input[type='radio'] {
-	display: none;
+  display: none;
 }
 
-
+@media (max-width: 500px) {
+  .input label {
+    padding: 8px 0px;
+  }
+}

@@ -5,7 +5,6 @@ import styles from './GameHeader.module.css';
 
 const GameHeader = () => {
   const { setRestart } = React.useContext(GameContext);
-
 	return (
 		<div className={styles.header}>
 			<h1>memory</h1>

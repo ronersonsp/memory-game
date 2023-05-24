@@ -26,3 +26,19 @@
   margin: 0px 0px 12px;
 }
 
+@media (max-width: 570px) {
+  .footerSingle {
+    justify-content: space-between;
+  }
+  .footer div {
+    padding: .5rem 2rem;
+    background-color: #D3E7F2;
+    font-size: .875rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #162739;
+  }
+  .footer div p {
+    margin-bottom: 5px;
+  }
+}

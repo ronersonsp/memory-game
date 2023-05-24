@@ -1,23 +1,21 @@
 .gridContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   width: 100%;
+  gap: 20px 0px;
   text-align: center;
+  place-items: center;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
 }
 .grid4 {
   max-width: 500px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid6 {
   max-width: 700px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 8px;
 }
-.grid6.gridContainer span {
-  margin: 8px;
-  width: 90px;
-  height: 90px;
-}
+
 .gridContainer span {
   display: flex;
   align-items: center;
@@ -25,12 +23,57 @@
   background-color: #162739;
   width: 100px;
   height: 100px;
-  margin: 10px;
   border-radius: 50%;
-  transition: .4s;
+  transition: 0.4s;
+}
+.grid6.gridContainer span {
+  width: 90px;
+  height: 90px;
 }
 
 .gridContainer span > * {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .grid6 {
+    max-width: 520px;
+    gap: 16px 20px;
+    font-size: 2px;
+  }
+  .grid6.gridContainer span {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 570px) {
+  .gridContainer {
+    max-width: 350px;
+    gap: 15px 0px;
+  }
+  .gridContainer span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .grid6 {
+    max-width: 420px;
+    gap: 10px 0px;
+  }
+  .grid6.gridContainer span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid6 {
+    max-width: 300px;
+    gap: 10px 0px;
+  }
+  .grid6.gridContainer span {
+    width: 40px;
+    height: 40px;
+  }
+}

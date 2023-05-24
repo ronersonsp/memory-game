@@ -2,6 +2,8 @@ import React from 'react';
 import animals from '../../../Icones/Animals';
 import farm from '../../../Icones/Farm';
 import GameLogic from '../GameLogic';
+import styles from './GameIcon.module.css';
+
 
 const GameIcon = ({ tema, gridCheck, iconCheck }) => {
   const handleLogic = GameLogic();
