@@ -14,13 +14,7 @@
   font-family: var(--type-first);
 }
 
-@media (max-width: 1200px) {
-  .game {
-    max-width: 840px;
-  }
-}
-
-@media (max-width: 840px) {
+@media (max-width: 1135px) {
   .game {
     margin: 0;
     height: 100vh;

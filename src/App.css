@@ -5,6 +5,7 @@ body {
   margin: 0px;
 	--type-first: 'Comme', sans-serif;
 	--primary-color: #fba216;
+  user-select: none;
 }
 
 img {
@@ -24,6 +25,7 @@ img {
 	border: none;
 	outline: none;
 	transition: .2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button:focus,

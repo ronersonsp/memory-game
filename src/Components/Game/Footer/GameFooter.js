@@ -6,6 +6,7 @@ import { GameContext } from '../../../GameContext';
 
 const GameFooter = ({ jogador }) => {
   const { move, grid, setFinishModal, ativos } = React.useContext(GameContext);
+  const single = jogador === '1' ? true : false;
 
   const total = grid === '4x4' ? 16 : 36;
   React.useEffect(() => {
@@ -15,12 +16,8 @@ const GameFooter = ({ jogador }) => {
   }, [move]);
 
   return (
-    <div className={styles.footer}>
-      {jogador === '1' ? (
-        <GameSinglePlayer />
-      ) : (
-        <GameMultiPlayer jogador={jogador} />
-      )}
+    <div className={`${styles.footer} ${single ? '' : styles.footerMulti}`}>
+      {single ? <GameSinglePlayer /> : <GameMultiPlayer jogador={jogador} />}
     </div>
   );
 };

@@ -32,13 +32,17 @@ const GameLogic = () => {
   function handleLogic({ target }) {
     setFlip(true);
     setAcertou(false);
-    if (flippeds.length < 2) {
+
+    if (flippeds.length < 2 && target.id !== '') {
       target.classList.add('flipped');
       setMove((move) => move + 1);
       setMovimento(movimento + 1);
     }
     if (flippeds.length === 2) {
-      if (flippeds[0].id === flippeds[1].id) {
+      if (
+        flippeds[0].id === flippeds[1].id &&
+        (flippeds[0].id !== '' || flippeds[1].id !== '')
+      ) {
         flippeds[1].classList.add('activeFlip');
         flippeds[0].classList.add('activeFlip');
         setMovimento((oldMovimento) => oldMovimento - 2);

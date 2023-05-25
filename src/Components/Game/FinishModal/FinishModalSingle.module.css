@@ -23,3 +23,19 @@
   background-color: #d9eefa;
   color: #616d73;
 }
+
+@media (max-width: 440px) {
+  .text h1 {
+    font-size: 1.3rem;
+  }
+  .text p {
+    font-size: 0.85rem;
+  }
+  .parameter {
+    margin: 3rem auto;
+  }
+  .parameter div {
+    font-size: 0.85rem;
+    width: 200px;
+  }
+}

@@ -5,7 +5,7 @@
   text-align: center;
 
 }
-.footerSingle {
+.footerMulti {
   display: flex;
   width: 100%;
   justify-content: space-around; 
@@ -26,19 +26,30 @@
   margin: 0px 0px 12px;
 }
 
-@media (max-width: 570px) {
-  .footerSingle {
-    justify-content: space-between;
+@media (max-width: 800px) {
+  .footerMulti div {
+    padding: .5rem 2.15rem;
+    font-size: .9rem;
   }
+}
+
+@media (max-width: 570px) {
   .footer div {
     padding: .5rem 2rem;
-    background-color: #D3E7F2;
     font-size: .875rem;
-    font-weight: bold;
-    border-radius: 5px;
-    color: #162739;
   }
   .footer div p {
     margin-bottom: 5px;
+  }
+
+  .footerMulti {
+    flex-wrap: wrap;
+    gap: 30px 5px;
+  }
+  .footerMulti div {
+    padding: .5rem 2.15rem;
+    font-size: .9rem;
+  }
+  .footerMulti div p {
   }
 }

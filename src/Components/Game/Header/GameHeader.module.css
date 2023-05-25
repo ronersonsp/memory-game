@@ -1,16 +1,16 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .header h1 {
-	color: #162633;
+  color: #162633;
 }
 
 .header a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .header a:nth-child(2) {
@@ -22,8 +22,8 @@
     font-size: 1.5rem;
   }
   .header :global(.button) {
-    font-size: .7rem;
-    padding: .5rem 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -32,8 +32,8 @@
     font-size: 1.3rem;
   }
   .header :global(.button) {
-    font-size: .6rem;
-    padding: .5rem 1rem;
+    font-size: 0.6rem;
+    padding: 0.5rem 1rem;
   }
   .header a:nth-child(2) {
     margin-left: 5px;
